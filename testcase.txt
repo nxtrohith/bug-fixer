@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int sum(int a, int b {
+    return a + b;
+
+
+int main() {
+    int x = 10, y;
+    float z;
+
+    y = x + a  // Missing semicolon, undeclared variable 'a'
+
+    if (x > 5) // Missing opening brace
+        printf("x is greater than 5");
+
+    z = sum(x, 5.5); // Type mismatch: passing float to int function
+
+    int *ptr;
+    *ptr = 100; // Memory error: uninitialized pointer dereferenced
+
+    FILE *fp;
+    fprintf(fp, "Writing to file"); // File error: 'fp' not opened
+
+    char buffer[5];
+    gets(buffer); // Security issue: unsafe function 'gets'
+
+    return 0;
+}
